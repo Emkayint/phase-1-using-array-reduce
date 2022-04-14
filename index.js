@@ -1,10 +1,6 @@
 const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
 // Code your solution here
-let totalBatteries = 0;
+let sum = 0;
 
-for(let i = 0; i < batteryBatches.lenght; i++){
-    totalBatteries += batteryBatches[i];
-}
-
-console.log(totalBatteries)
+const totalBatteries = batteryBatches.reduce((paramOne, param2) => paramOne + param2, sum);
